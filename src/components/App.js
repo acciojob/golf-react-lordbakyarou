@@ -12,11 +12,12 @@ class App extends Component {
     this.renderChoice = this.renderBallOrButton.bind(this);
     this.buttonClickHandler = this.buttonClickHandler.bind(this);
     this.handleEvent = this.handleEvent.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   buttonClickHandler() {
     this.setState({ renderBall: true });
-    componentDidMount();
+    this.componentDidMount();
   }
 
   //
