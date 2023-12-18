@@ -40,9 +40,9 @@ class App extends Component {
 
   handleEvent(event) {
     if (event.keyCode === 39) {
-      this.setState(() => ({
-        posi: this.state.posi + 5,
-        ballPosition: { left: `${this.state.posi}px` },
+      this.setState((prevState) => ({
+        posi: prevState.posi + 5,
+        ballPosition: { left: `${prevState.posi}px` },
       }));
       //   console.log(this.state.posi);
     }
